@@ -1041,7 +1041,7 @@ class acf_font_awesome_widget extends WP_Widget {
         $iconClass = get_sub_field( 'icon' );
 
         if ( 'Left of Text' === get_sub_field( 'icon_location' ) ) {
-          $text = "<span class='faw-icon' style='$iconColor margin-right: 1em;' > <i aria-hidden='true' class='fa $iconClass'></i> </span> $text";
+          $text = "<span class='faw-icon' style='$iconColor margin-right: 0.25em;' > <i aria-hidden='true' class='fa $iconClass'></i> </span> $text";
         } else {
           $text = "$text <span class='faw-icon' style='$iconColor' > <i aria-hidden='true' class='fa $iconClass'></i> </span> ";
         }
