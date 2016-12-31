@@ -983,7 +983,7 @@ function faw_acf_fields() {
                                    array(
                                      'param'    => 'widget',
                                      'operator' => '==',
-                                     'value'    => 'all',
+                                     'value'    => 'acf_font_awesome_widget',
                                    ),
                                  ),
                                ),
