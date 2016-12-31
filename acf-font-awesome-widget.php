@@ -5,7 +5,7 @@
  * Plugin URI:        https://github.com/wolozo/ACF-Font-Awesome-Widget
  * GitHub Plugin URI: https://github.com/wolozo/ACF-Font-Awesome-Widget
  * Description:       ACF Pro Widget to add list of icons with text. Requires <a href="https://www.advancedcustomfields.com/pro/">ACF Pro</a>, <a href="https://wordpress.org/plugins/advanced-custom-fields-font-awesome/">ACF: Font Awesome</a>, and <a href="https://wordpress.org/plugins/better-font-awesome/">Better Font Awesome</a>
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Wolozo
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       font-awesome-widget
@@ -1028,7 +1028,7 @@ class acf_font_awesome_widget extends WP_Widget {
         the_row();
         $li = null;
 
-        $LIstyle = ( 'Horizontal' === get_field( 'faw_display', $widget ) ) ? 'display:inline-block; margin-right: 0.5em;' : null;
+        $LIstyle = ( 'Horizontal' === get_field( 'faw_display', $widget ) ) ? 'display:inline-block; margin-right: 1.25em;' : null;
 
         $textColor = ( $textColor = get_sub_field( 'text_color' ) ) ? "color:$textColor;" : null;
         $textStyle =
@@ -1041,7 +1041,7 @@ class acf_font_awesome_widget extends WP_Widget {
         $iconClass = get_sub_field( 'icon' );
 
         if ( 'Left of Text' === get_sub_field( 'icon_location' ) ) {
-          $text = "<span class='faw-icon' style='$iconColor' > <i aria-hidden='true' class='fa $iconClass'></i> </span> $text";
+          $text = "<span class='faw-icon' style='$iconColor margin-right: 1em;' > <i aria-hidden='true' class='fa $iconClass'></i> </span> $text";
         } else {
           $text = "$text <span class='faw-icon' style='$iconColor' > <i aria-hidden='true' class='fa $iconClass'></i> </span> ";
         }
