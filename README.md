@@ -35,5 +35,5 @@ Of course, if you wish to install and update the plugin manually, you are welcom
 
 Requires:
  * [ACF Pro](https://www.advancedcustomfields.com/pro/)
-  * [ACF: Font Awesome](https://wordpress.org/plugins/advanced-custom-fields-font-awesome)
-  * [Better Font Awesome](https://wordpress.org/plugins/better-font-awesome/)
+ * [ACF: Font Awesome](https://wordpress.org/plugins/advanced-custom-fields-font-awesome)
+ * [Better Font Awesome](https://wordpress.org/plugins/better-font-awesome/)
